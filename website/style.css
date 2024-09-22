@@ -1,0 +1,165 @@
+body
+{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #EFF500;
+}
+
+main{
+margin-left: 20px;
+margin-right: 20px;
+}
+header
+{
+    background-color: #FFD700;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    font-family: Times New Roman;
+}
+nav
+{
+    background-color: #333;
+    overflow: hidden;
+}
+nav a
+{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+nav a:hover
+{
+    background-color: #ddd;
+    color: black;
+}
+section {
+    padding: 20px;
+}
+.about, .programs, .contact
+{
+    background-color: #ffffff;
+    margin: 20px;
+    padding: 20px;
+    border-style: solid;
+    border-radius: 24px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu-icon-container {
+    position: relative;
+    display: inline-block;
+}
+
+.custom-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    min-width: 160px;
+}
+
+.custom-menu.show {
+    display: block;
+}
+
+.custom-menu a {
+    padding: 12px 16px;
+    display: block;
+    color: #333;
+    text-decoration: none;
+}
+
+.custom-menu a:hover {
+    background-color: #ddd;
+}
+
+/* Navbar Toggler icon styles (for appearance) */
+.navbar-toggler {
+    border: none;
+    background-color: #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%2888, 88, 88, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    width: 24px;
+    height: 24px;
+}
+
+
+
+#logIncontainer
+{
+    width: 380px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+#inputLog
+{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #dddfe2;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f7f7f7;
+}
+
+
+#inputLog:focus
+{
+    border-color: #1877f2;
+    outline: none;
+    background-color: white;
+}
+
+
+#simpCont
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#simpBut
+{
+    width: 48%;
+    padding: 10px;
+    background-color: #1877f2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+#simpBut:hover
+{
+    background-color: #165dc1;
+}
+
+
+#simpBut[type="button"]
+{
+    background-color: #42b72a;
+}
+
+
+#simpBut[type="button"]:hover
+{
+    background-color: #36a420;
+}
