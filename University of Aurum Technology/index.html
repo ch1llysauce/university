@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <title> University of Aurum Technology </title>
+    <link rel = "stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/459342776_547033797842496_8363897126590659047_n.png?_nc_cat=106&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeHBWy3wYZDgq-oIDUM8fQqZtb1mT7SmPf61vWZPtKY9_lqKDJYPD727PIMl5fTanoI6ddJoIEK7wP9bL4f49wXQ&_nc_ohc=Sj4Q-5aCjNUQ7kNvgGgZBZN&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&_nc_gid=AVuPjIBOhxWScRY7KA_QvLh&oh=03_Q7cD1QGwzGCHo1xZk3tOksBlHFdRTBV1yAo0MuA2wuN5hSC8pQ&oe=67175C65"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">What We Offer</a></li>
+                    <li><a href="">Be A U.A.T.ian</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    <div class="text-box">
+        <h1>University of Aurum Technology: A Legacy of Innovation Since 1970</h1>
+        <p>
+            Unlock your future with cutting-edge innovation at the forefront of technology, <br>
+            A place where rough diamond meets limitless possibilities!
+        </p>
+        <a href="" class="hero-btn">Visit Us to Know More</a>
+    </div>
+
+    </section>
+
+<!--Courses-->
+
+    <section class="course">
+        <h1>Programs We Offer</h1>
+        <p>
+            We believe that our programs offer a comprehensive and well-rounded education that will prepare our students for the challenges of the future.
+        </p>
+        <div class="row">
+            <div class="course-col">
+                <h3>SHS Academic Tracks</h3>
+                <p>
+                    STEM
+                    <br>HUMSS
+                    <br>ABM
+                </p>
+            </div>
+            <div class="course-col">
+                <h3>Undergraduate Programs</h3>
+                <p>
+                    College of Engineering and Architecture
+                    <br>College of Computer Studies
+                    <br>College of Business Education
+                    <br>College of Education
+                    <br>College of Arts
+                </p>
+            </div>
+            <div class="course-col">
+                <h3>Graduate Programs</h3>
+                <p>
+                    Doctorate Degrees
+                    <br>Master's Degrees
+                    <br>Professional Science Master's (PSM) Degrees
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+<!--Campus-->
+    <section class="campus">
+        <h1>U.A.T Campus</h1>
+        <p>
+            sample description
+        </p>
+        <div class="row">
+            <div class="campus-col">
+                <img src="" alt="">
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+<!--JAVA SCRIPT-->
+<script>
+    var navLinks = document.getElementById("navLinks")
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+
+</body>
+</html>
