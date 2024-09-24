@@ -194,13 +194,158 @@ h3{
 }
 
 
-/*Campus*/
+/*About UAT*/
 
-.campus{
+.about{
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 3px;
+}
+
+/*Seal and Logo*/
+
+.seal{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.seal-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.seal-col img{
+    width: 100%
+}
+
+.seal-col p{
+    padding: 0;
+    text-align: justify;
 }
 
 
+.logo-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.logo-col img{
+    width: 100%
+}
+
+.logo-col p{
+    padding: 0;
+    text-align: justify;
+}
+
+
+/*Vision and Mission*/
+.vam{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.vision-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+
+.vision-col p{
+    padding: 0;
+    text-align: justify;
+}
+
+.vision-col h3{
+    margin-top: 0;
+}
+
+
+.mission-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+
+.mission-col p{
+    padding: 0;
+    text-align: justify;
+}
+
+.mission-col h3{
+    margin-top: 15px;
+}
+
+
+/*Call to Action*/
+
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(https://media.istockphoto.com/id/1458164457/photo/businessman-using-laptop-and-smartphone-with-contact-icons-on-virtual-screen-searching-web.jpg?s=612x612&w=0&k=20&c=MGgwv8LPiylmsFqbT2w2lfY2qTpBmnprS9O3oMjkkS8=);
+    background-position: center;
+    background-size: cover;
+    border-radius: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.cta h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+@media(max-width: 700px){
+    .cta h1{
+        font-size: 24px;
+    }
+}
+
+/*Footer*/
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h4{
+    margin-bottom: 0px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.footer h5{
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.icons .fa{
+    color: #f49236;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
