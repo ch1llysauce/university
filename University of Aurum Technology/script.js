@@ -1,3 +1,14 @@
+
+
+//Used functions
+function showMenu(){
+    navLinks.style.right = "0";
+}
+
+function hideMenu(){
+    navLinks.style.right = "-200px";
+}
+
 const formOpenBtn = document.querySelector("#form-open"),
   home = document.querySelector(".home"),
   formContainer = document.querySelector(".form_container"),
