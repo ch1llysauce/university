@@ -23,7 +23,7 @@ nav{
 }
 
 nav img{
-    width: 100px;
+    width: 400px;
 }
 
 .nav-links{
@@ -349,3 +349,4 @@ h3{
     cursor: pointer;
     padding: 18px 0;
 }
+
