@@ -18,7 +18,7 @@ html {
         linear-gradient(
             rgba(4, 9, 30, 0.7), 
             rgba(4, 9, 30, 0.7), 
-            #dbb610 90%
+            #000000 90%
         ),
         url('https://scontent.xx.fbcdn.net/v/t1.15752-9/459163115_1685717485544894_2996375280863272006_n.png?_nc_cat=102&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeGOOTTgo74vEto63TDLobRY-XocXpV9kOb5ehxelX2Q5rR7SOTgb6i_-tvvp9mHsqrLbm4ZJJdtd1PLdzif_C4c&_nc_ohc=Ziy69O-KFQwQ7kNvgGlHGAG&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&_nc_gid=AfUsHGjSceFYmilqeH3s6JZ&oh=03_Q7cD1QGNlxMDHqU1MSNL3Vfj5FfgP4tmJ8jhBviyRqtfvO-eJg&oe=67177722');
     background-position: center;
@@ -155,15 +155,18 @@ nav .fa{
 
 /*Courses*/
 
-.course-container{
+.course-container, .seallogo-container, .cta-section::before{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: radial-gradient(farthest-corner at 100px 440px, #d6b915 25%, #dbdb20 50%, #daec35 75%, #dbb610 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center;
+    background-color: black;
+    background: 
+        linear-gradient(to bottom, black, white 90%)
+        linear-gradient(to top, black, white 10%);
+        position: relative;
     background-size: cover;
     margin: 0;
     padding: 0;
@@ -178,14 +181,16 @@ nav .fa{
 
 .course p{
     font-size: 17px;
+    color: white;
 }
 h1{
     font-size: 36px;
     font-weight: 600;
+    color: white;
 }
 
 p{
-    color: #525252;
+    color: #000000;
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
@@ -199,19 +204,22 @@ p{
 
 }
 
-.course-col{
+.course-col {
     flex-basis: 31%;
-    background: #ccc6bf;
+    background: transparent; 
+    backdrop-filter: blur(15px);
+    border: 2px solid rgba(255, 255, 255, 0.5); 
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 12px;
     box-sizing: border-box;
 }
-
 h3{
     text-align: center;
     font-weight: 600;
     margin: 10px 0;
+    color: rgb(255, 255, 255);
+
 }
 
 .course-col:hover{
@@ -227,12 +235,12 @@ h3{
 
 /*About UAT*/
 
-.about-container, .seallogo-container, .visionmission-container, .cta-section, .lower-container {
+.about-container, .visionmission-container, .lower-container {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: radial-gradient(farthest-corner at 100px 440px, #d6b915 25%, #dbdb20 50%, #daec35 75%, #dbb610 100%);
+    background-color: white;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -250,6 +258,7 @@ h3{
 }
 .seal-col h3, .logo-col h3{
     font-size: 30px;
+    color: white;
 
 }
 .about p, .seal-col p, .logo-col p{
@@ -277,12 +286,13 @@ h3{
 }
 
 .seal-col img{
-    width: 100%
+    width: 50%
 }
 
 .seal-col p{
     padding: 0;
     text-align: justify;
+    color: white;
 }
 
 
@@ -295,12 +305,13 @@ h3{
 }
 
 .logo-col img{
-    width: 100%
+    width: 50%
 }
 
 .logo-col p{
     padding: 0;
     text-align: justify;
+    color: white;
 }
 
 
@@ -326,10 +337,12 @@ h3{
 .vision-col p{
     padding: 0;
     text-align: justify;
+    color: black;
 }
 
 .vision-col h3{
     margin-top: 0;
+    color: black;
 }
 
 
@@ -350,7 +363,8 @@ h3{
 }
 
 .mission-col h3{
-    margin-top: 15px;
+    color: black;
+    margin-top: 0px;
 }
 
 
@@ -411,3 +425,29 @@ h3{
     cursor: pointer;
     padding: 18px 0;
 }
+
+.return-to-top {
+    text-decoration: none; 
+    color: black; 
+    font-weight: normal; 
+    font-size: 14px; 
+    display: block; 
+    margin-top: 40px; 
+    text-align: center;
+    padding: 10px 0;
+    transition: color 0.3s ease-in-out; 
+}
+
+/* Add hover effect */
+.return-to-top:hover {
+    color: #7e6923; 
+}
+
+h6{
+    font-size: 30px;
+}
+
+a {
+    color: inherit; 
+}
+
