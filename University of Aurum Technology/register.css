@@ -1,0 +1,145 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),url('https://scontent.xx.fbcdn.net/v/t1.15752-9/459163115_1685717485544894_2996375280863272006_n.png?_nc_cat=102&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeGOOTTgo74vEto63TDLobRY-XocXpV9kOb5ehxelX2Q5rR7SOTgb6i_-tvvp9mHsqrLbm4ZJJdtd1PLdzif_C4c&_nc_ohc=Ziy69O-KFQwQ7kNvgGlHGAG&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&_nc_gid=AfUsHGjSceFYmilqeH3s6JZ&oh=03_Q7cD1QGNlxMDHqU1MSNL3Vfj5FfgP4tmJ8jhBviyRqtfvO-eJg&oe=67177722');
+    background-position: center;
+    background-size:  cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 400px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    text-shadow: 2px 2px 2px black;
+}
+
+/*Hover Effect*/
+.nav-links ul li::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    background: #ffdf76;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+/*Hover Effect End*/
+
+/* Home */
+.home {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: transparent;
+  background-size: cover;
+  background-position: center;
+}
+.home::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  z-index: 100;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s ease-out;
+}
+.home.show::before {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    text-shadow: 2px 2px 2px #000000;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+
+body {
+    background-image: url('https://scontent.xx.fbcdn.net/v/t1.15752-9/459163115_1685717485544894_2996375280863272006_n.png?_nc_cat=102&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeGOOTTgo74vEto63TDLobRY-XocXpV9kOb5ehxelX2Q5rR7SOTgb6i_-tvvp9mHsqrLbm4ZJJdtd1PLdzif_C4c&_nc_ohc=Ziy69O-KFQwQ7kNvgGlHGAG&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&_nc_gid=AfUsHGjSceFYmilqeH3s6JZ&oh=03_Q7cD1QGNlxMDHqU1MSNL3Vfj5FfgP4tmJ8jhBviyRqtfvO-eJg&oe=67177722'); /* Your background image here */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    max-width: 800px;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+h2, h3 {
+    margin-bottom: 20px;
+    color: #343a40;
+}
+.form-section {
+    margin-bottom: 30px;
+}
+.form-control {
+    margin-bottom: 15px;
+}
+.btn-primary {
+    width: 100%;
+    padding: 10px;
+}
+
+.register-signup{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 15px;
+    color:#000000;
+}
